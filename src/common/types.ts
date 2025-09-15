@@ -1,8 +1,14 @@
+import { z } from 'zod';
+import { HealthSchema, ZodUUID } from './common.schema';
+
 /**
  * @file src/common/types.ts
  * @description This file contains all globally shared, foundational enums and interfaces that are
  * used across multiple, distinct domains of the application.
  */
+
+/** @type UUID - The TypeScript type inferred from our Zod schema. */
+export type UUID = z.infer<typeof ZodUUID>;
 
 /**
  * @enum ElementType
@@ -17,13 +23,8 @@ export enum ElementType {
 }
 
 /**
- * @interface IHealth
- * @description Represents a health pool with a current and maximum value. This is a fundamental,
- * reusable data structure for any entity that can have health.
+ * @type IHealth
+ * @description Represents a health pool with a current and maximum value.
+ * This type is inferred from the Zod schema to ensure consistency.
  */
-export interface IHealth {
-  /** The current health value. */
-  current: number;
-  /** The maximum possible health value. */
-  max: number;
-}
+export type IHealth = z.infer<typeof HealthSchema>;
