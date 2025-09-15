@@ -1,0 +1,23 @@
+{
+  "name": "weekend-armory",
+  "version": "1.0.0",
+  "description": "Weekend armory project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deveyus/weekend-armory.git"
+  },
+  "author": "Serafina Londrie",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/deveyus/weekend-armory/issues"
+  },
+  "homepage": "https://github.com/deveyus/weekend-armory#readme",
+  "dependencies": {
+    "@types/uuid": "^10.0.0",
+    "uuid": "^13.0.0"
+  }
+}
